@@ -14,7 +14,7 @@ require './network_members'
 #------------------- LOAD INFO FROM GENE FILE --------------------
 
 #Now I open the gene file and create some arrays that will help create the Class objects
-gene_file = File.new("/Users/sara/BioCompu/Programming_challenges/Task2/ArabidopsisSubNetwork_GeneList.txt","r")
+gene_file = File.new("./ArabidopsisSubNetwork_GeneList.txt","r")
 
 genes_list=Array.new 
 gene_file.each do |agi| # iterate over the elements of gene_file
