@@ -7,3 +7,7 @@ For the first assignment, run the following command:
 
 For the Second Assignment, run the following command:
 >> ruby main.rb
+
+For the Third Assignment, run the following command:
+>> ruby main.rb
+
