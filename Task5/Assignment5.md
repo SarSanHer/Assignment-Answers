@@ -14,7 +14,7 @@ WHERE{
         ?protein a up:Protein .
 }
 ```
-RESULT: 281303435 records 
+**RESULT**: 281303435 records 
 
 
 
@@ -29,7 +29,7 @@ WHERE{
 }
 
 ```
-RESULT: 89182 records 
+**RESULT**: 89182 records 
 
 
 
@@ -48,7 +48,7 @@ WHERE {
   ?activity rdfs:label ?description
 }
 ```
-RESULT: Beta-carotene + 4 reduced ferredoxin [iron-sulfur] cluster + 2 H(+) + 2 O(2) = zeaxanthin + 4 oxidized ferredoxin [iron-sulfur] cluster + 2 H(2)O
+**RESULT**: Beta-carotene + 4 reduced ferredoxin [iron-sulfur] cluster + 2 H(+) + 2 O(2) = zeaxanthin + 4 oxidized ferredoxin [iron-sulfur] cluster + 2 H(2)O
 
 
 
@@ -80,7 +80,7 @@ WHERE{
   ?taxon up:rank up:Species 
 }
 ```
-RESULT: 1766921 species
+**RESULT**: 1766921 species
 
 
 
@@ -96,7 +96,7 @@ WHERE{
   ?protein a up:Protein .  
 }
 ```
-RESULT: 
+**RESULT**: 
 
 
 ## From the Atlas gene expression database SPARQL Endpoint: http://www.ebi.ac.uk/rdf/services/atlas/sparql
@@ -132,7 +132,7 @@ WHERE {
   FILTER contains(STR(?a),'3702')
  }  
 ```
-RESULT: 809 pathways
+**RESULT**: 809 pathways
 
 
 10. Get all PubMed references for the pathway with the name “Degradation of the extracellular matrix”
@@ -150,7 +150,7 @@ WHERE {
   FILTER CONTAINS(STR(?ref),'pubmed') .
 }
 ```
-RESULT: 7 references
+**RESULT**: 7 references
 
 
 
@@ -179,7 +179,7 @@ WHERE{
 
 }
 ```
-RESULT: There are 15 results ( SELECT (count(distinct ?AGI) as ?count) )
+**RESULT**: There are 15 results ( SELECT (count(distinct ?AGI) as ?count) )
 
 
 
@@ -198,4 +198,4 @@ WHERE {
   FILTER CONTAINS(STR(?code),'EvidenceCodeVocabulary1').   
 }
 ```
-RESULT: 809 have IEA 
+**RESULT**: 809 have IEA, and in question 9 we saw that the total number of Arabidopsis pathways was 809; therefore, all Arabidopsis pathway annotations in Reactome are “inferred from electronic annotation”
