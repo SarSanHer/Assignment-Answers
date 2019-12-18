@@ -193,7 +193,7 @@ WHERE {
   ?pathway a biopax3:Pathway .
   ?pathway biopax3:organism ?a .
   FILTER contains(STR(?a),'3702') . 
-  ?pathway biopax3:evidence ?evidence . #delete code after this to get all annotations
+  ?pathway biopax3:evidence ?evidence . 
   ?evidence biopax3:evidenceCode ?code .
   FILTER CONTAINS(STR(?code),'EvidenceCodeVocabulary1').   
 }
