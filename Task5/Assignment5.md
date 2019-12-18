@@ -15,7 +15,7 @@ WHERE{
 }
 ```
 **RESULT**: 281303435 records 
-
+<br/><br/><br/>
 
 
 2. How many Arabidopsis thaliana protein records are in UniProt? 
@@ -30,7 +30,7 @@ WHERE{
 
 ```
 **RESULT**: 89182 records 
-
+<br/><br/><br/>
 
 
 3. What is the description of the enzyme activity of UniProt Protein Q9SZZ8? 
@@ -49,7 +49,7 @@ WHERE {
 }
 ```
 **RESULT**: Beta-carotene + 4 reduced ferredoxin [iron-sulfur] cluster + 2 H(+) + 2 O(2) = zeaxanthin + 4 oxidized ferredoxin [iron-sulfur] cluster + 2 H(2)O
-
+<br/><br/><br/>
 
 
 
@@ -66,7 +66,7 @@ WHERE{
   FILTER (contains(STR(?date), "2019"))
 }
 ```
-
+<br/><br/><br/>
 
 
 5. How many species are in the UniProt taxonomy? 
@@ -81,7 +81,7 @@ WHERE{
 }
 ```
 **RESULT**: 1766921 species
-
+<br/><br/><br/>
 
 
 6. How many species have at least one protein record? 
@@ -97,7 +97,7 @@ WHERE{
 }
 ```
 **RESULT**: 
-
+<br/><br/><br/>
 
 ## From the Atlas gene expression database SPARQL Endpoint: http://www.ebi.ac.uk/rdf/services/atlas/sparql
 
@@ -117,7 +117,7 @@ WHERE {
   ?a rdfs:label ?description .
 }
 ```
-
+<br/><br/><br/>
 
 ## From the REACTOME database SPARQL endpoint: http://www.ebi.ac.uk/rdf/services/reactome/sparql
 
@@ -133,7 +133,7 @@ WHERE {
  }  
 ```
 **RESULT**: 809 pathways
-
+<br/><br/><br/>
 
 10. Get all PubMed references for the pathway with the name “Degradation of the extracellular matrix”
 ```
@@ -151,7 +151,7 @@ WHERE {
 }
 ```
 **RESULT**: 7 references
-
+<br/><br/><br/>
 
 
 ## BONUS QUERIES
@@ -180,7 +180,7 @@ WHERE{
 }
 ```
 **RESULT**: There are 15 results ( SELECT (count(distinct ?AGI) as ?count) )
-
+<br/><br/><br/>
 
 
 REACTOME BONUS 2 points : write a query that proves that all Arabidopsis pathway annotations in Reactome are “inferred from electronic annotation” (evidence code) (...and therefore are probably garbage!!!)
